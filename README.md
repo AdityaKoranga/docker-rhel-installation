@@ -49,3 +49,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```bash
 docker-compose --version
 ```
+
+Add docker user:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+```bash
+sudo chmod 666 /var/run/docker.sock
+```
