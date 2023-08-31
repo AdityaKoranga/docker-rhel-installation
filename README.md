@@ -11,7 +11,18 @@ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```bash
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
+Remove existing runtimes:
 
+
+```bash
+sudo yum remove podman
+```
+
+Similarly:
+
+```bash
+sudo yum remove buildah
+```
 ```bash
 sudo yum install -y docker-ce
 ```
